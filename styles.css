@@ -1,0 +1,163 @@
+/* ---------- Colors ---------- */
+:root {
+    --orange: #f5934a;
+    --blue: #1d93bb;
+    --red-orange: #e8603c;
+    --cream: #fdf9ee;
+    --mint: #bfe8e2;
+    --text: #333333;
+    --code-bg: #fff1e0;
+    --code-border: #f9d9b8;
+    --divider: #f0dca8;
+}
+
+/* ---------- Page ---------- */
+body {
+    margin: 0;
+    font-family: "Mulish", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--text);
+
+    /* Tiled banana pattern that stays put while the page scrolls */
+    background-color: var(--mint);
+    background-image: url("images/pattern.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+    background-color: var(--orange);
+    border-bottom: 4px solid var(--blue);
+    padding: 30px 0 20px 0;
+}
+
+.site-title {
+    width: 620px;
+    margin: 0 auto 10px auto;
+    font-family: "Pacifico", cursive;
+    font-size: 48px;
+    line-height: 70px;
+    color: white;
+}
+
+.nav-list {
+    display: flex;
+    gap: 8px;
+    width: 620px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    padding: 4px 16px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+/* ---------- Hero banner ---------- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 475px;
+    border-bottom: 4px solid var(--blue);
+
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-title {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* ---------- White card ---------- */
+.card {
+    box-sizing: border-box;
+    width: 660px;
+    margin: 40px auto 30px auto;
+    padding: 40px;
+    background-color: var(--cream);
+}
+
+.card-title {
+    margin: 0;
+    font-family: "Pacifico", cursive;
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: normal;
+    color: var(--blue);
+}
+
+.card-subtitle {
+    margin: 0 0 20px 0;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--divider);
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--red-orange);
+}
+
+.tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.code {
+    padding: 2px 8px;
+    border: 1px solid var(--code-border);
+    border-radius: 3px;
+    background-color: var(--code-bg);
+    font-family: "Inconsolata", monospace;
+    font-size: 16px;
+    color: var(--red-orange);
+}
+
+.text-link {
+    color: var(--blue);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--blue);
+}
+
+/* ---------- "That's a wrap!" box ---------- */
+.wrap-up {
+    box-sizing: border-box;
+    width: 660px;
+    margin: 0 auto 120px auto;
+    padding: 30px 40px;
+    background-color: var(--blue);
+    border-left: 6px solid var(--orange);
+    color: white;
+}
+
+.wrap-up-title {
+    margin: 0 0 10px 0;
+    font-family: "Pacifico", cursive;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.wrap-up-text {
+    margin: 0;
+}
